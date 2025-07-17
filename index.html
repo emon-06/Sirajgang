@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <title>সিরাজগঞ্জ জেলার উপজেলার তালিকা</title>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      table {
+        width: 60%;
+        margin: 0 auto 20px;
+        border-collapse: collapse;
+        background: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      th,
+      td {
+        padding: 12px;
+        text-align: center;
+        border: 1px solid #ddd;
+      }
+      th {
+        background-color: #007bff;
+        color: white;
+      }
+      tr:hover {
+        background-color: #e0f0ff;
+        cursor: pointer;
+      }
+      iframe {
+        display: block;
+        margin: 20px auto;
+        width: 80%;
+        height: 450px;
+        border: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>সিরাজগঞ্জ জেলার উপজেলা তালিকা</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ক্রমিক</th>
+          <th>উপজেলার নাম</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr onclick="loadUpazila('sadar.html')">
+          <td>১</td>
+          <td>সিরাজগঞ্জ সদর</td>
+        </tr>
+        <tr onclick="loadUpazila('kazipur.html')">
+          <td>২</td>
+          <td>কাজিপুর</td>
+        </tr>
+        <tr onclick="loadUpazila('raigang.html')">
+          <td>৩</td>
+          <td>রায়গঞ্জ</td>
+        </tr>
+        <tr onclick="loadUpazila('belkuci.html')">
+          <td>৪</td>
+          <td>বেলকুচি</td>
+        </tr>
+        <tr onclick="loadUpazila('taras.html')">
+          <td>5</td>
+          <td>তাড়াশ</td>
+        </tr>
+        <tr onclick="loadUpazila('sahajadpur.html')">
+          <td>6</td>
+          <td>শাহজাদপুর</td>
+        </tr>
+        <tr onclick="loadUpazila('ullapara.html')">
+          <td>7</td>
+          <td>উল্লাপাড়া</td>
+        </tr>
+        <tr onclick="loadUpazila('kamar.html')">
+          <td>8</td>
+          <td>কামারখন্দ</td>
+        </tr>
+        <tr onclick="loadUpazila('chouhali.html')">
+          <td>9</td>
+          <td>চৌহালী</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <iframe id="upazilaViewer" src=""></iframe>
+
+    <script>
+      function loadUpazila(filename) {
+        document.getElementById("upazilaViewer").src = filename;
+      }
+    </script>
+  </body>
+</html>
